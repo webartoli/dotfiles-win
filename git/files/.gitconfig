@@ -65,3 +65,4 @@
 	wip = !git add -u && git commit -m 'WIP'
 	wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
 	tree = !git log --graph --decorate --all --oneline
+	ignored-changes = !git ls-files -v . | grep ^S # https://stackoverflow.com/a/39776107/10059105
